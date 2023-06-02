@@ -1,0 +1,5 @@
+*.class
+bin/
+.vscode/
+lib/
+README.md
