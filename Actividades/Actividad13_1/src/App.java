@@ -5,7 +5,8 @@ public class App {
         DateTime time1 = new DateTime();
         DateTime time2 = new DateTime(0, 26, 03);
         DateTime time3 = new DateTime(2017, 12, 31, 23, 59, 59);
-        DateTime time4 = time3;
+        DateTime time4 = time3.clone();
+        time4.next();
         Date date5 = new Date(2017, 12, 31);
 
         Date date3 = time3.toDate(time3);
@@ -21,7 +22,7 @@ public class App {
         System.out.println(date3);
         System.out.println(time6);
 
-        System.out.println(time2.equals(time2.clone(time2)));
+        System.out.println(time2.equals(time2.clone()));
         System.out.println(time3.equals(date5));
         System.out.println(date5.equals(time3));
     }

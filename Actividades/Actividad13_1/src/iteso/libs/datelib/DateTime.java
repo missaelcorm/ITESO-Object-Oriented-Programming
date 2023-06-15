@@ -82,7 +82,7 @@ public class DateTime extends Date{
         return new Date(dt.getYear(), dt.getMonth(), dt.getDay());
     }
 
-    public DateTime clone(DateTime d){
+    public DateTime clone(){
         return new DateTime(super.getYear(), super.getMonth(), super.getDay(), this.getHH(), this.getMI(), this.getSS());
     }
 
