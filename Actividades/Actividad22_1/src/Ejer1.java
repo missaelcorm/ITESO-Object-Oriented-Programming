@@ -31,8 +31,7 @@ public class Ejer1 {
         }
 
         while(numberStr.size()!=0){
-            if(numberStr.size()!=0)
-                numberStr.remove(0);
+            numberStr.remove(0);
         }
 
         System.out.println("Size: " + numberStr.size());
