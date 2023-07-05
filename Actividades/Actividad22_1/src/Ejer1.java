@@ -11,28 +11,21 @@ public class Ejer1 {
         numberStr.add("five");
         numberStr.add("six");
 
-        for (int i = 0; i < numberStr.size(); i++) {
+        for (int i = 0; i < numberStr.size(); i++)
             System.out.println(i +  ".- " + numberStr.get(i));
-        }
 
-        numberStr.add(3, "two");
-        numberStr.remove(4);
+        numberStr.set(3, "two");
 
         System.out.println(numberStr.get(1));
         System.out.println(numberStr.get(3));
 
         for (int i = 0; i < numberStr.size(); i++) {
-            numberStr.add(i, numberStr.get(i).toUpperCase());
-            numberStr.remove(i+1);
-        }
-
-        for (int i = 0; i < numberStr.size(); i++) {
+            numberStr.set(i, numberStr.get(i).toUpperCase());
             System.out.println(i +  ".- " + numberStr.get(i));
         }
 
-        while(numberStr.size()!=0){
+        while(!numberStr.isEmpty())
             numberStr.remove(0);
-        }
 
         System.out.println("Size: " + numberStr.size());
     }

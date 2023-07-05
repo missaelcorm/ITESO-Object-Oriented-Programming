@@ -14,6 +14,8 @@ public class Ejer2 {
         numbers.add(180);
         numbers.add(100);
 
+        System.out.println("Size: " + numbers.size());
+
         for (Integer integer : numbers) {
             System.out.println(integer);
         }
