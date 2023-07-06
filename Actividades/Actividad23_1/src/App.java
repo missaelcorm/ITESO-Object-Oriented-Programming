@@ -33,7 +33,8 @@ public class App {
     public static ArrayDeque<Object> ArrayDequeNumberToArrayDequeObject(ArrayDeque<?> arr){
         ArrayDeque<Object> newArr = new ArrayDeque<>();
         for (Object object : arr) {
-            newArr.add(object);
+            //newArr.add(object);
+            newArr.offer(arr.pollFirst());
         }
 
         return newArr;
@@ -60,7 +61,8 @@ public class App {
             hashInt.add((int)i);
             hashNum.add((int)i);
 
-            arrDeqNum.add(i);
+            //arrDeqNum.add(i);
+            arrDeqNum.offer(i);
         }
 
         print(arrList);
@@ -73,9 +75,9 @@ public class App {
         System.out.println("Size of stack: " + countElements(stack));
         System.out.println("Size of hashSet: " + countElements(hashSet));
 
-        System.out.print("Greates Number hashNum: \b\t");
+        System.out.print("Greatest Number hashNum: \b\t");
         System.out.println(greatestNumber(hashNum));
-        /*System.out.print("Greates Number hashInt: \b\t");
+        /*System.out.print("Greatest Number hashInt: \b\t");
         System.out.println(greatestNumber(hashInt)); /* The method greatestNumber(Collection<Number>) 
                                                         in the type App is not applicable for the arguments 
                                                         (HashSet<Integer>)Java(67108979) */
