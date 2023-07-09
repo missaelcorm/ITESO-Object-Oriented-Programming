@@ -23,6 +23,12 @@ public class Motherboard {
         NA, DDR3, DDR4, DDR5
     }
 
+    public Motherboard(){
+        for (int i = 0; i < usb.length; i++) {
+            usb[i] = new USB();
+        }
+    }
+
     public void setBrand(Motherboard_Brand brand) {
         this.brand = brand;
     }

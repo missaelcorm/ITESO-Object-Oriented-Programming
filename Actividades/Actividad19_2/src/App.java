@@ -15,6 +15,7 @@ public class App {
 
         Memory memories[] = new Memory[4];
         for(int i=0; i<memories.length; i++){
+            memories[i] = new Memory();
             memories[i].setCapacity(16);
             memories[i].setType(Memory.Memory_Type.DDR5);
         }
